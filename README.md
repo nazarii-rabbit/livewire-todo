@@ -21,6 +21,10 @@ php artisan migrate
 php artisan db:seed
 ```
 
+```shell
+php artisan storage:link
+```
+- ``(!Warning locally in .env) APP_URL=http://127.0.0.1:8000``
 ## Login data
 ```
 admin@admin.com
