@@ -7,8 +7,9 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="mb-10">
+            <div class="mb-10 flex">
                 <livewire:widget.todo-counter-widget></livewire:widget.todo-counter-widget>
+                <livewire:widget.user-counter-widget></livewire:widget.user-counter-widget>
             </div>
 
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
