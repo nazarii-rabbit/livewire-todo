@@ -31,4 +31,9 @@ class Todo extends Model
     {
         return $this->status == 'done';
     }
+
+    public function isActive(): bool
+    {
+        return $this->status == 'active';
+    }
 }
