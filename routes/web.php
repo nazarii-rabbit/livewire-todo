@@ -14,4 +14,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/todo-list', function () {
+        return view('pages.todo');
+    })->name('todo-list');
 });
