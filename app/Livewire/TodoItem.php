@@ -8,6 +8,7 @@ use Livewire\Component;
 class TodoItem extends Component
 {
     public Todo $todo;
+    public $edit;
 
     public function remove(): void
     {
@@ -17,5 +18,10 @@ class TodoItem extends Component
     public function updateTodoStatus(): void
     {
         $this->dispatch('update-todo-item-status', todoId: $this->todo->id);
+    }
+
+    public function editTodo(Todo $todo): void
+    {
+        $this->edit = $todo;
     }
 }
