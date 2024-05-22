@@ -13,6 +13,16 @@ class TodoRepository implements TodoRepositoryInterface
         return Todo::all();
     }
 
+    public function allCount(): int
+    {
+        return $this->all()->count();
+    }
+
+    public function allCountByUser(User $user): int
+    {
+        return $this->getAllByUser($user)->count();
+    }
+
     public function getAllByUser(User $user)
     {
         return $user->todos()->get();
