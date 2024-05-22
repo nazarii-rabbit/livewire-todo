@@ -15,7 +15,8 @@
             </x-slot>
 
             <x-slot name="content">
-                <x-input type="text" wire:model="description" class="block w-full"></x-input>
+                <x-input type="text" id="description" wire:model="description" class="block w-full"></x-input>
+                <x-input-error for="description" class="mt-2" />
             </x-slot>
 
             <x-slot name="footer">
